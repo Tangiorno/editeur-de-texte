@@ -37,4 +37,7 @@ public class Document {
     public void effacer(int start, int end){
         remplacer(start, end, "");
     }
+    public void clear(){
+        texte = "a";
+    }
 }
