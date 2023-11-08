@@ -17,10 +17,11 @@ public class CommandeFactory {
     private CommandeFactory() {}
 
     public Commande createCommand(String name, Document document, String[] parameters) {
-        switch (name) {
-            case "ajouter" : return new CommandeAjouter(document, parameters);
-            default: return null;
-        }
+        return switch (name) {
+            case "ajouter" -> new CommandeAjouter(document, parameters);
+            case "remplacer" -> new CommandeRemplacer(document, parameters);
+            default -> null;
+        };
     }
 
 }
