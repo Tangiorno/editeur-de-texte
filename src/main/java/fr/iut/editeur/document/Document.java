@@ -1,5 +1,7 @@
 package fr.iut.editeur.document;
 
+import fr.iut.editeur.commande.invoker.CommandeInvoker;
+
 public class Document {
 
     private String texte;
@@ -39,5 +41,8 @@ public class Document {
     }
     public void clear(){
         texte = "a";
+    }
+    public void undo(){
+        System.err.println();
     }
 }
