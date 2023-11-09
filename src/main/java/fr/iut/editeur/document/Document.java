@@ -40,7 +40,7 @@ public class Document {
         remplacer(start, end, "");
     }
     public void clear(){
-        texte = "a";
+        texte = "";
     }
     public void undo(){
         System.err.println();
