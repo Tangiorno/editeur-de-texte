@@ -38,6 +38,6 @@ public class Document {
         remplacer(start, end, "");
     }
     public void clear(){
-        texte = "a";
+        texte = "";
     }
 }
